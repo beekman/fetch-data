@@ -2,25 +2,20 @@
 
 exports[`Quote component matches a snapshot 1`] = `
 <figure>
-  <img
-    src="/path/to/image"
-  />
+  <img />
   <figcaption>
-    "
+    : "
     My Quote
     "
-     -- by Me
   </figcaption>
 </figure>
 `;
 
 exports[`Quote component matches a snapshot when name isn't provided 1`] = `
 <figure>
-  <img
-    src="/path/to/image"
-  />
+  <img />
   <figcaption>
-    "
+    : "
     My Quote
     "
   </figcaption>

@@ -1,7 +1,5 @@
 import React from 'react';
-import Quote from './quotes/Quote';
-import Button from './commons/button/Button';
-import QuoteFetcher from '../containers/QuoteFetcher';
+import QuoteFetcher from '../containers/QuoteFetcherFn';
 
 export default function App() {
   return (
