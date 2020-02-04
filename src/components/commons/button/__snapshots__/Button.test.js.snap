@@ -7,9 +7,7 @@ exports[`Button component match a snapshot 1`] = `
 `;
 
 exports[`Button component match a snapshot with type prop passed 1`] = `
-<button
-  type="button"
->
+<button>
   My Button
 </button>
 `;
