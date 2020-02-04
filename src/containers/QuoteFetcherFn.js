@@ -1,30 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { getFuturamaQuote } from '../components/services/quotesApi';
 import Quote from '../components/quotes/Quote';
 import Button from '../components/commons/button/Button';
+import useCharacters from '../hooks/quotes';
 
 export default function QuoteFetcher() {
-  const [text, setText] = useState('');
-  const [character, setCharacter] = useState('');
-  const [image, setImage] = useState('');
 
-  const fetch = () => {
-    getFuturamaQuote()
-      .then(quoteResponse => {
-        setText(quoteResponse.text);
-        setCharacter(quoteResponse.character);
-        setImage(quoteResponse.image);
-      });
-  };
-
-  useEffect(() => {
-    fetch();
-  }, []);
+  const { character, fetchCharacter } = useCharacters('fry', 10);
+  console.log(character);
 
   return (
     <>
-      <Quote text={ text } image={ image } character={ character } />
-      <Button text="Get a new one" handleClick={ fetch } />
+      <Quote text={ character.text } image={ character.image } character={ character.character } />
+      <Button text="Get a new one" handleClick={ fetchCharacter } />
     </>
   );
 }
