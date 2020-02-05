@@ -11,7 +11,7 @@ const Quote = ({ text, character, image }) => (
 Quote.propTypes = {
   text: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  character: PropTypes.string
+  character: PropTypes.string.isRequired
 };
 
 export default Quote;

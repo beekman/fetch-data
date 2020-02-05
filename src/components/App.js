@@ -3,6 +3,8 @@ import QuoteFetcher from '../containers/QuoteFetcherFn';
 
 export default function App() {
   return (
-    <QuoteFetcher />
+    <>
+      <QuoteFetcher />
+    </>
   );
 }

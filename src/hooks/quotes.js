@@ -3,6 +3,7 @@ import { getFuturamaQuote } from '../services/quotesApi';
 
 const useCharacters = (characterName = 'bender', quantity = 1) => {
   const [character, setCharacter] = useState({});
+  const [selectedCharacter, setSelectedCharacter] = useState({});
 
   useEffect(() => {
     fetchCharacter();
@@ -12,7 +13,7 @@ const useCharacters = (characterName = 'bender', quantity = 1) => {
     getFuturamaQuote(characterName, quantity)
       .then(fetchedCharacter => setCharacter(fetchedCharacter));
   };
-  return { character, fetchCharacter };
+  return { character, fetchCharacter, selectedCharacter, setSelectedCharacter };
 };
 
 export default useCharacters;
