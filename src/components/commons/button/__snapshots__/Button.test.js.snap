@@ -2,12 +2,12 @@
 
 exports[`Button component match a snapshot 1`] = `
 <button>
-  My Button
+  More!
 </button>
 `;
 
 exports[`Button component match a snapshot with type prop passed 1`] = `
 <button>
-  My Button
+  More!
 </button>
 `;
