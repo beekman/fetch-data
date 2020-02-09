@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Quote = ({ text, character, image }) => (
+const Quote = ({ text, character }) => (
   <figure>
-    <img src={ image } />
-    <blockquote>{ character ? ` ${character}` : '' }: <q>{ text }</q></blockquote>
-  </figure>
+    <div className="quote">{ character ? ` ${character}` : '' }: <q>{ text }</q> </div>
+  </figure >
 );
 
 Quote.propTypes = {
   text: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
   character: PropTypes.string.isRequired
 };
 

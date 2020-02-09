@@ -14,7 +14,8 @@ const Select = ({ onChange }) => {
 };
 
 Select.propTypes = {
-  select: PropTypes.array
+  select: PropTypes.array,
+  onChange: PropTypes.func.isRequired
 };
 
 export default Select;

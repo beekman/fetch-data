@@ -2,24 +2,28 @@
 
 exports[`Quote component matches a snapshot 1`] = `
 <figure>
-  <img />
-  <blockquote>
+  <div
+    className="quote"
+  >
     : 
     <q>
       My Quote
     </q>
-  </blockquote>
+     
+  </div>
 </figure>
 `;
 
 exports[`Quote component matches a snapshot when name isn't provided 1`] = `
 <figure>
-  <img />
-  <blockquote>
+  <div
+    className="quote"
+  >
     : 
     <q>
       My Quote
     </q>
-  </blockquote>
+     
+  </div>
 </figure>
 `;
