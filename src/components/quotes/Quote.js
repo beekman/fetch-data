@@ -7,7 +7,6 @@ const Quote = ({ text }) => (
 
 Quote.propTypes = {
   text: PropTypes.string.isRequired,
-  character: PropTypes.string.isRequired
 };
 
 export default Quote;
