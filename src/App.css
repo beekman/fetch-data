@@ -1,19 +1,41 @@
 body{
-  background-color: midnightblue;
+  background-color: RGB(5,71,68);
   color: white;
   background-repeat: repeat-y ;
+  background-size: cover;
 }
 
 .QuoteFetcher {
-  background: url('https://images7.alphacoders.com/415/415929.jpg');
   background-size: cover;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
+.quoteBy {
+  color: RGB(117,218,161);
+  font-size: 1.4rem;
+}
 
-img, .imageContainer {
-max-width: 100%;
+.imageContainer {
+max-width: 250px;
 height: auto;
 margin: 0 auto;
+float: left;
+background-color: RGB(117,218,161);
+border-radius: 10%;
+margin: 0 1rem 0 0;
+border-color: RGB(95,17,28);
+border-width: 10px;
+border-style: solid;
+}
+
+img{
+  max-width:100%;
+}
+
+ul{
+  list-style-type: none;
+  li{
+    padding-bottom: 0.5rem;
+  }
 }

@@ -8,10 +8,10 @@ const QuoteList = ({ characterQuotes, loading }) => {
   });
 
   return loading
-    ? <h1>Loading</h1>
+    ? <h1>Loading Quotes</h1>
     : <>
       <div className="imageContainer"><img src={ characterQuotes[0].image } /></div>
-      <ul>{ QuoteItems }</ul>
+      <ul><p className="quoteBy">Quotes By { characterQuotes[0].character }</p>{ QuoteItems }</ul>
     </>;
 };
 
