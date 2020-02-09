@@ -20,7 +20,7 @@ body{
 max-width: 250px;
 height: auto;
 margin: 0 auto;
-float: left;
+float: right;
 background-color: RGB(117,218,161);
 border-radius: 10%;
 margin: 0 1rem 0 0;
@@ -36,6 +36,6 @@ img{
 ul{
   list-style-type: none;
   li{
-    padding-bottom: 0.5rem;
+    padding-top: 0.rem;
   }
 }

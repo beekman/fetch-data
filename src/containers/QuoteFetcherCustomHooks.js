@@ -3,7 +3,7 @@ import QuoteList from '../components/quotes/QuoteList';
 import styles from '../App.css';
 import useCharacters from '../hooks/quotes';
 import Button from '../components/commons/button/Button';
-import Select from '../components/commons/option/Select.js';
+import Select from '../components/commons/option/Select';
 export default function QuoteFetcher() {
   const [qty, setQty] = useState(1);
   const { characterQuotes, fetchCharacter, setSelectedCharacter, selectedCharacter, loading } = useCharacters(selectedCharacter, qty);
