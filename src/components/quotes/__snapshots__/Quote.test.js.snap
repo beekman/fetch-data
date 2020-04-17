@@ -1,25 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Quote component matches a snapshot 1`] = `
-<figure>
-  <img />
-  <blockquote>
-    : 
-    <q>
-      My Quote
-    </q>
-  </blockquote>
-</figure>
+<q>
+  My Quote
+</q>
 `;
 
 exports[`Quote component matches a snapshot when name isn't provided 1`] = `
-<figure>
-  <img />
-  <blockquote>
-    : 
-    <q>
-      My Quote
-    </q>
-  </blockquote>
-</figure>
+<q>
+  My Quote
+</q>
 `;

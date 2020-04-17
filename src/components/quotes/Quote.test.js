@@ -13,3 +13,4 @@ describe('Quote component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });
+
